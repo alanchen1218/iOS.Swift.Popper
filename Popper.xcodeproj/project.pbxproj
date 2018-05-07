@@ -15,6 +15,9 @@
 		A014B309209BB6F10063960A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A014B307209BB6F10063960A /* LaunchScreen.storyboard */; };
 		A014B314209BB6F10063960A /* PopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014B313209BB6F10063960A /* PopperTests.swift */; };
 		A014B31F209BB6F10063960A /* PopperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014B31E209BB6F10063960A /* PopperUITests.swift */; };
+		A0964C40209CD38600CD543D /* over.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0964C3D209CD38600CD543D /* over.mp3 */; };
+		A0964C41209CD38600CD543D /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0964C3E209CD38600CD543D /* wrong.mp3 */; };
+		A0964C42209CD38600CD543D /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0964C3F209CD38600CD543D /* correct.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		A014B31A209BB6F10063960A /* PopperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A014B31E209BB6F10063960A /* PopperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopperUITests.swift; sourceTree = "<group>"; };
 		A014B320209BB6F10063960A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0964C3D209CD38600CD543D /* over.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = over.mp3; sourceTree = "<group>"; };
+		A0964C3E209CD38600CD543D /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
+		A0964C3F209CD38600CD543D /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +109,7 @@
 				A014B2FD209BB6F00063960A /* ViewController.swift */,
 				A014B2FF209BB6F00063960A /* Main.storyboard */,
 				A014B305209BB6F10063960A /* Assets.xcassets */,
-				A014B307209BB6F10063960A /* LaunchScreen.storyboard */,
+				A0964C3C209CD34200CD543D /* music */,
 				A014B30A209BB6F10063960A /* Info.plist */,
 				A014B302209BB6F00063960A /* Popper.xcdatamodeld */,
 			);
@@ -126,6 +132,17 @@
 				A014B320209BB6F10063960A /* Info.plist */,
 			);
 			path = PopperUITests;
+			sourceTree = "<group>";
+		};
+		A0964C3C209CD34200CD543D /* music */ = {
+			isa = PBXGroup;
+			children = (
+				A0964C3F209CD38600CD543D /* correct.mp3 */,
+				A0964C3E209CD38600CD543D /* wrong.mp3 */,
+				A0964C3D209CD38600CD543D /* over.mp3 */,
+				A014B307209BB6F10063960A /* LaunchScreen.storyboard */,
+			);
+			path = music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,13 +213,16 @@
 				TargetAttributes = {
 					A014B2F7209BB6F00063960A = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 					};
 					A014B30E209BB6F10063960A = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 						TestTargetID = A014B2F7209BB6F00063960A;
 					};
 					A014B319209BB6F10063960A = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 						TestTargetID = A014B2F7209BB6F00063960A;
 					};
 				};
@@ -232,8 +252,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0964C40209CD38600CD543D /* over.mp3 in Resources */,
 				A014B309209BB6F10063960A /* LaunchScreen.storyboard in Resources */,
 				A014B306209BB6F10063960A /* Assets.xcassets in Resources */,
+				A0964C42209CD38600CD543D /* correct.mp3 in Resources */,
+				A0964C41209CD38600CD543D /* wrong.mp3 in Resources */,
 				A014B301209BB6F00063960A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +395,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
